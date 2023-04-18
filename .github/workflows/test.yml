@@ -11,8 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run_tests
-      - uses: actions/checkout@v3
-      - run: |
+        id: run_tests
+        uses: actions/checkout@v3
+        run: |
           echo "npm install\n" >> $GITHUB_OUTPUT
           echo "npm run all\n" >> $GITHUB_OUTPUT
 
