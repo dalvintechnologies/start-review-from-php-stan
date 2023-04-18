@@ -1,11 +1,11 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Start-review-from-php-stan'
+description: 'This action starts a review from phpstan specifing the line th file and the error'
+author: '@dalvin\technologies'
 inputs:
   milliseconds: # change this
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'Time in milliseconds'
+    default: '1000'
 runs:
   using: 'node16'
   main: 'dist/index.js'

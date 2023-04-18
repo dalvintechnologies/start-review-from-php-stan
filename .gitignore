@@ -90,6 +90,9 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# idea
+.idea
+
 # OS metadata
 .DS_Store
 Thumbs.db
