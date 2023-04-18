@@ -18,7 +18,7 @@ jobs:
         run: |
           echo "name=npm install" >> $GITHUB_OUTPUT
           echo "name=npm run all" >> $GITHUB_OUTPUT
-          echo "The time was ${{ $GITHUB_OUTPUT }}"
+          echo "The time was ${{ steps.run_tests.outputs }}"
 
   test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
