@@ -16,8 +16,8 @@ jobs:
       - name: run_tests
         id: run_tests
         run: |
-          echo "npm install\n" >> $GITHUB_OUTPUT
-          echo "npm run all\n" >> $GITHUB_OUTPUT
+          echo "npm install" >> $GITHUB_OUTPUT
+          echo "npm run all" >> $GITHUB_OUTPUT
 
   test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
