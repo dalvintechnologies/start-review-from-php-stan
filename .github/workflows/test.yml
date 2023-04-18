@@ -16,9 +16,8 @@ jobs:
       - name: run_tests
         id: run_tests
         run: |
-          echo "::set-output name=version::$(npm install)"
-          echo "::set-output name=version::$(npm run all)"
-
+          echo "name=npm install" >> $GITHUB_ENV
+          echo "name=npm run all" >> $GITHUB_ENV
 
   test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
