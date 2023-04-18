@@ -6,6 +6,9 @@ inputs:
     required: true
     description: 'Time in milliseconds'
     default: '1000'
+  output: # change this
+    description: 'Output'
+    default: 'Hello, world!'
 runs:
   using: 'node16'
   main: 'dist/index.js'
